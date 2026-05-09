@@ -54,13 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
   `).join('');
 
   // ── RESEARCH ──
-  document.getElementById('research-tiles').innerHTML = S.research.map(r => `
-    <div class="interest-tile">
+  document.getElementById('research-tiles').innerHTML = S.research.map(r => {
+    const inner = `
       <span class="tile-icon">${r.icon}</span>
       <p class="tile-title">${r.title}</p>
       <p class="tile-desc">${r.desc}</p>
-    </div>
-  `).join('');
+      ${r.link ? '<span class="tile-explore">Explore →</span>' : ''}
+    `;
+    return r.link
+      ? `<a href="${r.link}" class="interest-tile interest-tile--link">${inner}</a>`
+      : `<div class="interest-tile">${inner}</div>`;
+  }).join('');
 
   // ── CONTACT ──
   document.getElementById('contact-note').textContent = S.contact.note;
