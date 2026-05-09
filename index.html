@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhil Koduri — AI Practitioner & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Akhil Koduri</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow" id="hero-eyebrow"></span>
+      <h1 id="hero-heading"></h1>
+      <p class="hero-desc" id="hero-desc"></p>
+      <div class="hero-cta">
+        <a href="#articles" class="btn-primary">Read my articles</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+      <div class="hero-stats" id="hero-stats"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section">
+      <p class="section-tag">About me</p>
+      <h2 class="section-title">Where practice meets<br/>deep research</h2>
+      <div class="section-rule"></div>
+      <div class="about-grid">
+        <div class="about-body" id="about-bio"></div>
+        <div>
+          <p class="section-tag" style="margin-bottom: 1.25rem;">Areas of expertise</p>
+          <ul class="expertise-list" id="expertise-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section id="articles" class="articles-section">
+    <div class="articles-inner">
+      <p class="section-tag">Publications &amp; Writing</p>
+      <h2 class="section-title">Latest articles</h2>
+      <div class="section-rule"></div>
+      <div class="article-grid" id="article-grid"></div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="interests-section">
+    <div class="interests-inner">
+      <p class="section-tag">Research focus</p>
+      <h2 class="section-title" style="color: var(--white);">What I'm exploring</h2>
+      <div class="section-rule"></div>
+      <div class="interest-tiles" id="research-tiles"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-inner">
+      <div>
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let's connect</h2>
+        <div class="section-rule"></div>
+        <p class="contact-note" id="contact-note"></p>
+      </div>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Akhil Koduri</span>
+    <span class="footer-copy">© 2026 · Built with intention</span>
+  </footer>
+
+  <!-- Load content first, then render -->
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+
+</body>
+</html>
