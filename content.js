@@ -16,7 +16,7 @@ const SITE = {
     description: "Not a portfolio — a public commitment to making AI more accessible, better understood, and more responsibly built. I'm Akhil Koduri: I research, engineer, and write at the frontier of AI to bring it closer to the practitioners and communities who will be shaped by it.",
     stats: [
       { number: "IEEE",  label: "Senior Grade" },
-      { number: "5+",    label: "Publications"  },
+      { number: "6+",    label: "Publications"  },
       { number: "1",     label: "Patent Filed"  },
       { number: "12+",   label: "Research Areas" },
     ],
@@ -27,7 +27,7 @@ const SITE = {
     bio: [
       "I architect production AI systems that set the standard — not just meet it. Specializing in Generative AI platform design at enterprise scale, I define technical direction for RAG architectures, multi-agent orchestration, and MCP-enabled context infrastructure: the foundational systems that determine how AI actually performs when it matters.",
       "My work operates across the full AI delivery stack — from data ingestion and retrieval infrastructure to secure, cloud-native deployments across Azure, AWS, and GCP. At the principal level, the mandate extends beyond execution: establishing architectural principles, scalability patterns, and engineering standards that compound across teams and shape how organizations build AI at scale.",
-      "I extend this work into the broader research community as an IEEE Senior Grade member, conference session chair, and peer reviewer — contributing to how the field defines trustworthy, production-grade AI. With 5+ peer-reviewed publications and a filed US patent in Generative AI data ingestion, I help set the technical agenda, not just follow it.",
+      "I extend this work into the broader research community as an IEEE Senior Grade member, conference session chair, and peer reviewer — contributing to how the field defines trustworthy, production-grade AI. With 6+ peer-reviewed publications and a filed US patent in Generative AI data ingestion, I help set the technical agenda, not just follow it.",
       "My foundation is deliberately deep: a PhD in Information Technology with an AI specialization (GPA 3.9/4.0), grounded in graduate-level statistical and machine learning research — giving me the theoretical fluency to critically evaluate, challenge, and extend the systems I design.",
       "This site is where I think in public — sharing what I'm building, researching, and learning for the practitioners and researchers serious about where AI is headed.",
     ],
@@ -60,6 +60,14 @@ const SITE = {
       excerpt: "Conventional RAG systems rely on static vector stores — limiting their utility in fast-changing environments. This paper analyzes architectures that support continuous memory addition, deletion, consolidation, and re-weighting, transitioning RAG from static retrieval to lifelong learning.",
       meta: "January 2026 · IJISRT Vol. 11",
       url: "https://www.ijisrt.com/dynamic-memory-updating-in-rag-lifelong-learning-and-adaptation",
+    },
+    {
+      tag: "AI Security · Agentic AI",
+      publisher: "The AI Journal",
+      title: "Securing AI Coding Agents",
+      excerpt: "Examines the security challenges posed by autonomous AI coding agents in enterprise environments — proposing a layered governance framework that treats AI agents as non-human identities requiring scoped credentials, policy mediation, and audit logging mapped to SOC 2, ISO 27001, and NIST AI RMF.",
+      meta: "May 2026 · The AI Journal",
+      url: "https://aijourn.com/securing-ai-coding-agents/",
     },
     {
       tag: "AI Infrastructure · Multi-Cloud",
