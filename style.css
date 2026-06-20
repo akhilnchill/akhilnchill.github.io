@@ -93,9 +93,8 @@ nav {
 }
 
 .hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 6rem 3rem;
+  width: 100%;
+  padding: 6rem clamp(3rem, 5vw, 7rem);
   position: relative;
   z-index: 1;
 }
@@ -190,7 +189,7 @@ nav {
 }
 
 /* ── SHARED SECTION ── */
-.section { padding: 6rem 3rem; max-width: 900px; margin: 0 auto; }
+.section { padding: 6rem clamp(3rem, 5vw, 7rem); width: 100%; }
 
 .section-tag {
   font-size: 0.75rem;
@@ -241,9 +240,9 @@ nav {
 }
 
 /* ── ARTICLES ── */
-.articles-section { background: var(--cream-dark); padding: 6rem 3rem; }
-.articles-inner { max-width: 900px; margin: 0 auto; }
-.article-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
+.articles-section { background: var(--cream-dark); padding: 6rem clamp(3rem, 5vw, 7rem); }
+.articles-inner { width: 100%; }
+.article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
 
 .article-card {
   background: var(--white);
@@ -300,8 +299,8 @@ nav {
 .article-read-more { font-size: 0.75rem; color: var(--gold); margin-left: auto; }
 
 /* ── RESEARCH ── */
-.interests-section { background: var(--navy); padding: 6rem 3rem; }
-.interests-inner { max-width: 900px; margin: 0 auto; }
+.interests-section { background: var(--navy); padding: 6rem clamp(3rem, 5vw, 7rem); }
+.interests-inner { width: 100%; }
 .interests-inner .section-title { color: var(--white); }
 
 .interest-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
@@ -329,11 +328,10 @@ nav {
 .tile-explore { display: block; font-size: 0.72rem; color: var(--gold); margin-top: 0.75rem; opacity: 0.6; transition: opacity 0.2s; }
 
 /* ── CONTACT ── */
-.contact-section { background: var(--cream); padding: 6rem 3rem; }
+.contact-section { background: var(--cream); padding: 6rem clamp(3rem, 5vw, 7rem); }
 
 .contact-inner {
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -383,7 +381,7 @@ nav {
 /* ── FOOTER ── */
 footer {
   background: var(--navy);
-  padding: 2.5rem 3rem;
+  padding: 2.5rem clamp(3rem, 5vw, 7rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -394,6 +392,11 @@ footer {
 .footer-copy { font-size: 0.8rem; color: #5a7a8a; }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .article-grid { grid-template-columns: repeat(2, 1fr); }
+  .interest-tiles { grid-template-columns: repeat(3, 1fr); }
+}
+
 @media (max-width: 768px) {
   nav { padding: 0 1.5rem; }
   .nav-links { gap: 1.5rem; }
