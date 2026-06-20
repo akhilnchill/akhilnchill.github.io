@@ -31,14 +31,6 @@ const SITE = {
       "My foundation is deliberately deep: a PhD in Information Technology with an AI specialization (GPA 3.9/4.0), grounded in graduate-level statistical and machine learning research — giving me the theoretical fluency to critically evaluate, challenge, and extend the systems I design.",
       "This site is where I think in public — sharing what I'm building, researching, and learning for the practitioners and researchers serious about where AI is headed.",
     ],
-    expertise: [
-      "Building AI that works beyond the prototype",
-      "Designing multi-agent and agentic RAG systems at scale",
-      "MCP server infrastructure and context engineering",
-      "Cloud-native AI deployment across Azure, AWS, and GCP",
-      "Bridging research and production engineering",
-      "Turning complex AI into measurable business value",
-    ],
   },
 
   // ── ARTICLES SECTION ──────────────────────────────────────

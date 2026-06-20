@@ -34,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('about-bio').innerHTML =
     S.about.bio.map(p => `<p>${p}</p>`).join('');
 
-  document.getElementById('expertise-list').innerHTML =
-    S.about.expertise.map(e => `<li>${e}</li>`).join('');
-
   // ── ARTICLES ──
   document.getElementById('article-grid').innerHTML = S.articles.map(a => `
     <a href="${a.url}" target="_blank" class="article-card">
